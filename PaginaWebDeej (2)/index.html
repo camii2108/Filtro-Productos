@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>Pagina Web Reserva de Hoteles</title>
+
+  <link rel="stylesheet" href="css/estilos.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <script src="js/jquery-3.2.1.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/villano.class.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/catalogoHotel.class.js"></script>
+
+
+</head>
+
+<body>
+  <main class="contenedorMenu">
+    <br>
+
+    <div class="title">
+
+      <h2 id="TitleImg">VIVI TUS MEJORES MOMENTOS</h2>
+
+      <a class="navbar-brand" href="#">LA PERLA HOTEL ALOJAMIENTO <br><img class="img1"
+          src="./images/hotel5estrellas.jpg"></a>
+    </div>
+    <br>
+    <div class="contenedorimagen">
+      <div id='ArrayPlaces'>
+        <!--DOM Array-->
+      </div>
+
+      <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Reservacion</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Catalogo de habitaciones</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+  </main>
+
+  <p id="text"></p>
+  <img class="imgMenu" src=">
+
+  </div>
+
+
+  <fieldset>
+    <h3>Comppleta Datos de reserva</h3>
+    <input type="text" name="username" id="username" />
+    <input type="text" name="password" id="password" />
+    <button id="btnLogin">Acceder</button>
+  </fieldset>
+
+  <fieldset>
+    <h3>Comppleta Datos de reserva</h3>
+    <input type="text" name="nombre" id="nombre" />
+    <input type="text" name="habitacion" id="habitacion" />
+    <input type="text" name="huespedes" id="huespedes" />
+    <button id="btnReserva">Reservar</button>
+  </fieldset>
+
+
+  <!--CATALOGO-->
+
+  <div class="wrap">
+    <h1>N CATALOGO DE HABITACIONES/h1>
+      <div class="store-wrapper">
+        <div class="category_list">
+          <a href="#" class="category_item" category="all">Todo</a>
+          <a href="#" class="category_item" category="cama">Habitaciones Sin Terraza</a>
+          <a href="#" class="category_item" category="doscamas">Camas Dobles</a>
+          <a href="#" class="category_item" category="terrraza">Terraza</a>
+          <a href="#" class="category_item" category="vista y club">Forseason</a>
+          <a href="#" class="category_item" category="spa">Spa</a>
+        </div>
+
+        <section class="products-list">
+          <div class="product-item" category="cama">
+            <img src="images/cama-King.jpg" alt="">
+            <a href="#">Habitacion con sofa</a>
+            <button id="reserva">RESERVAR</button>
+          </div>
+          <div class="product-item" category="cama">
+            <img src="images/cama-Twin-Guestroom.jpg" alt="">
+            <a href="#">Habitacion con sofa</a>
+            <button id="reserva">RESERVAR</button>
+          </div>
+          <div class="product-item" category="doscamas">
+            <img src="images/dosCamasDeluxe-Pool-Access-Twin.jpg" alt="">
+            <a href="#">DOS CAMAS</a>
+            <button id="reserva">RESERVAR</button>
+          </div>
+          <div class="product-item" category="doscamas">
+            <img src="images/dosCamasDeluxe-Twin-Guestroom.jpg" alt="">
+            <a href="#">DOS CAMAS</a>
+            <button id="reserva">RESERVAR</button>
+          </div>
+          <div class="product-item" category="terrraza">
+            <img src="images/terrazaDeluxe-King.jpg" alt="">
+            <a href="#">TERRAZA</a>
+            <button id="reserva">RESERVAR</button>
+          </div>
+          <div class="product-item" category="terrraza">
+            <img src="images/terrazaDeluxe-Twin.jpg" alt="">
+            <a href="#">TERRAZA</a>
+            <button id="reserva">RESERVAR</button>
+          </div>
+          <div class="product-item" category="vista y club">
+            <img src="images/vistaClub-View-King-Suite.jpg" alt="">
+            <a href="#">VISTA Y CLUB</a>
+            <button id="reserva">RESERVAR</button>
+          </div>
+          <div class="product-item" category="vista y club">
+            <img src="images/vistaClub-View-Twin.jpg" alt="">
+            <a href="#">VISTA Y CLUB</a>
+            <button id="reserva">RESERVAR</button>
+          </div>
+          <div class="product-item" category="spa">
+            <img src="images/spa.jpg" alt="">
+            <a href="#">SPA</a>
+            <button id="reserva">RESERVAR</button>
+          </div>
+        </section>
+      </div>
+  </div>
+
+
+
+  <!--libreria script-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
